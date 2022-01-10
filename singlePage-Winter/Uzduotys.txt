@@ -1,0 +1,29 @@
+1. Replicate   HTML+CSS/ND/Single page with backgroud/README.md
+
+
+
+2. Make test repository
+
++2.1 Create new repository
++2.2 Clone repository
+2.3 Add some files
+2.4 Commit those files to repository
+2.5 Push changes to main/master
+
+2.6 Create new branch "feature-new-window"
+2.7 Make changes in files (for example: just add new lines somewhere)
+2.8 Commit those changes to branch "feature-new-window"
+2.9 Push changes to branch "feature-new-window"
+
+2.10 Checkout main/master branch
+2.11 Make changes in the same files and lines (in order to get merge conflict)
+2.12 Commit those changes to branch main/master
+2.13 Push those changes to branch main/master
+
+2.14 Create Pull/Merge request in github.com (you will see that merge is not possible)
+2.15 Merge main/master into "feature-new-window"
+2.16 Solve merge conflict
+2.17 Push merge changes
+2.18 Finish Pull/Merge request
+
+2.19 Send link to that repository

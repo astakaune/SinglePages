@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-box iskaiciuoja margin ir padding i nurodyta dydi */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: OpenSans;
+    color: #333;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    color: #333;
+}
+
+#navbar {
+    width: 100%;
+    min-height: 50px;
+    background-color: #262626;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar a {
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    letter-spacing: 0.5px;
+    margin: 0px 20px;
+}
+
+#navbar a:hover {
+    color: #d43031;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/intro-bg.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-family: 'Rochester', cursive;
+    color: #fff;
+    font-size: 10em;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+header p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 150px;
+}
+
+#specials {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#specials .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-line {
+    background: #d43031;
+    height: 2px;
+    width: 70px;
+    margin: 20px auto;
+}
+
+#specials .container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#specials .container .row .special-item {
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+#specials .container .row .special-item h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+}
+
+#specials .container .row .special-item img {
+    margin: 30px 0 20px;
+    max-width: 100%;
+}
+
+#specials .container .row .special-item p {
+    line-height: 24px;
+    margin: 15px 0 20px;
+}
+
+#about {
+    background-color: #f6f6f6;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: row;
+}
+
+#about .container img {
+    height: 570px;
+    width: 50%;
+}
+
+#about .container .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .container .about-text p {
+    width: 50%;
+    margin: 15px 0 30px;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+#menu .container {
+    padding: 100px;
+}
+
+#menu .container .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+#menu .container .menu-container .menu-details {
+    width: 50%;
+    padding: 0 15px;
+    /* border: 1px solid red; */
+}
+
+#menu .container .menu-container .menu-details h3 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #444;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#menu .container .menu-container .menu-details .menu-item {
+    margin: 45px 0;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .container .menu-container .menu-details .menu-item:hover {
+    height: max-content;
+}
+
+#menu .container .menu-container .menu-details .menu-item:hover .description {
+    display: block;
+}
+
+#menu .container .menu-container .menu-details .menu-item .title-and-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#menu .container .menu-container .menu-details .menu-item .title-and-price .title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #444;
+}
+
+#menu .container .menu-container .menu-details .menu-item .title-and-price .price {
+    font-weight: 400;
+    color: #555;
+    font-size: 18px;
+}
+
+#menu .container .menu-container .menu-details .menu-item .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    width: 85%;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery img {
+    width: 25%;
+}
+
+#chef .container {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#chef .container .chef-desc, #chef .container img {
+    width: 50%;
+    padding: 0 15px;
+}
+
+#chef .container img {
+    max-width: 600px;
+    max-height: 400px;
+}
+
+#chef .container .chef-desc h2 {
+    text-align: left;
+}
+
+#chef .container .chef-desc .title-line {
+    margin: 20px 0 70px 0;
+}
+
+#chef .container .chef-desc p {
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+#contact {
+    padding: 100px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact .info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    color: #aaa;
+}
+
+#contact .title-line {
+    width: 40px;
+}
+
+#contact .info p {
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+#contact form .input-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+#contact form .input-row input {
+    width: 100%;
+}
+
+#contact form .input-row input:first-child {
+    margin-right: 15px;
+}
+
+#contact form .input-row input:last-child {
+    margin-left: 15px;
+}
+
+#contact form textarea {
+    margin-bottom: 30px;
+    resize: vertical;
+}
+
+#contact form .submit-button {
+    text-align: center;
+}
+
+#contact form input:not([type='submit']), #contact form textarea {
+    font-family: inherit;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+#contact form input:not([type='submit'])::placeholder, #contact form textarea::placeholder {
+    color: #999;
+}
+
+#contact form input[type="submit"] {
+    text-transform: uppercase;
+    color: #777;
+    background-color: transparent;
+    border: 2px solid #777;
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+#contact form input[type="submit"]:hover {
+    color: white;
+    background: red;
+    border-color: red;
+}
+
+#footer {
+    background-color: #262626;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer .copyright-text {
+    font-size: 14px;
+    color: #666;
+}
+
+#footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+#footer a:hover, #footer .media-icons i:hover {
+    color: #eee;
+}
+
+#footer .media-icons a {
+    margin: 0 15px;
+}
+
+#footer .media-icons i {
+    font-size: 24px;
+    padding: 4px;
+    color: #888;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    #specials .container .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .container img {
+        width: 100%;
+    }
+    #about .container .about-text {
+        padding: 60px 0;
+    }
+    #menu .container .menu-container .menu-details {
+        width: 100%;
+    }
+    #gallery img {
+        width: 50%;
+    }
+    #chef .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #chef .container .chef-desc {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #chef .container img {
+        width: 100%;
+        height: 100%;
+    }
+    #contact {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #contact .info {
+        flex-direction: column;
+    }
+    #contact .info .col {
+        margin-bottom: 40px;
+    }
+    #contact form {
+        width: 100%;
+    }
+    #contact form .input-row {
+        flex-direction: column;
+    }
+    #contact form .input-row input:first-child, #contact form .input-row input:last-child {
+        margin: 0;
+    }
+    #contact form .input-row input:first-child {
+        margin-bottom: 15px;
+    }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #footer .media-icons {
+        margin-top: 20px;
+    }
+}
